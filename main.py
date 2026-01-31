@@ -37,8 +37,8 @@ unzip_and_fix("images.zip", "images")
 print("binsList files:", os.listdir("binsList"))
 
 # ================== TELEGRAM API ==================
-api_id = 34151962
-api_hash = '2b9f91b43a858f3fd3c23c6faec41aa4'
+api_id = int(os.getenv("API_ID"))
+api_hash = os.getenv("API_HASH")
 
 # ================== OUTPUT CHANNELS ==================
 scarscapper = -1003506416886
